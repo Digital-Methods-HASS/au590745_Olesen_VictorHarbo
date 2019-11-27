@@ -1,3 +1,4 @@
+#Everything in this script is made by Andrew Baumann. I (Victor Harbo) is just using this script in my Digital methods course
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 

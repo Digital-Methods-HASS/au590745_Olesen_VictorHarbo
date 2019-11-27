@@ -77,8 +77,34 @@ You have now exited the reticulate python console and are back in the normal R c
 This was a short description on how to run python in R. If anything is causing trouble, consult the slides of Emma Rand at \url{https://3mmarand.github.io/useR2019_tutorial/#38}
 
 \subsection{Pdfannots.py}
-This section of the text will focus on how to install the script, where to put it in your system, how to use it through RStudio and things to remember when working with the script. First things first. We have to have access to the script in order to use it. The script was originally made by Andrew Baumann and it can be found at his Github repository at \url{https://github.com/0xabu/pdfannots}. I have also uploaded the script to my Gitub repository, which can be found here: \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo/tree/master/pdfannots_in_R/input}, so that it is easy to find both this paper and the script it is about at the same place. All credit for the pdfannots.py script goes to Andrew Baumann. 
-\textcolor{red}{Do a part on how i downloaded the script from github and also get my own github working}
+This section of the text will focus on how to install the script, where to put it in your system, how to use it through RStudio and things to remember when working with the script. First things first. We have to have access to the script in order to use it. The script was originally made by Andrew Baumann and it can be found at his GitHub repository at \url{https://github.com/0xabu/pdfannots}. I have also uploaded the script to my GitHub repository, which can be found here: \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo/tree/master/pdfannots_in_R/input}, so that it is easy to find both this paper and the script it is about at the same place. All credit for the pdfannots.py script goes to Andrew Baumann. 
+
+\subsubsection{Accessing the script}
+At first i found the script on GitHub through a search on the words "pdf" and "annotations". From here i cloned the repository to my computer through bash with the command:
+\begin{verbatim}
+    git clone \url{https://github.com/0xabu/pdfannots}
+\end{verbatim}
+Now i had the repository with the link cloned to my computer. In R you have the ability to open python scripts, so i did that and had a look at the script. It looks like this in the beginning: \newline
+\includegraphics[scale=0.85]{part_of_pdfannotspy.PNG} \newline
+I tried to figure out if there was anywhere i had to put a path to the file i wanted to run the script on, but could not figure out where that should be, so i started searching for some of the different parts of the script. It turns out that the part of the script regarding argparse is a way to tell python that it needs an argument input. This means that the script is build in a way so that you do not have to change anything in it when changing files. The only thing we have to change when changing files is the path to the input file. More on that later, firstly we have to be sure that our script is in the right place. The script has to be placed in the same working directory as where we are running the R-package reticulate. I like to import the PDF's into a folder in the same working directory called input, just to keep everything in order and at the same place. \newline
+With R being able to understand a python script, the pdfannots.py script in the right directory and with an annotated PDF we are finally ready to run the script.
+
+\subsubsection{Running the script}
+As told earlier, there are many ways to communicate with python through the reticulate package. To make the script run we have to use the command:
+\begin{verbatim}
+    system("python pdfannots.py PATH TO FILE")
+\end{verbatim}
+To make the script run from this we have to specify where the file is located. I have my PDFs in the input folder of my working directory. In this folder i have a file named "a\textunderscore history\textunderscore of \textunderscore medieval\textunderscore heresy\textunderscore and\textunderscore inquisition.pdf" because i am doing another paper on medieval heresy at the moment. This text i have made a lot of highlights and annotations in and i would like to have them in plain text. So to run the script on this file i would write this piece of code:
+\begin{verbatim}
+    system("python pdfannots.py input/a_history_of_medieval_
+    heresy_and_inquisition.pdf")
+\end{verbatim}
+Running that line gives a result looking like this:\newline
+\includegraphics[scale=0.5]{result_of_running_code.PNG} \newline
+The output is all of my higglights, annotations and underlines in that PDF-file. The console does detect a lot of spaces in the PDF and the annotations. For these i have a little work around using regular expressions
+
+\subsubsection{Making the output readable}
+As mentioned above, the output of the script might be filled with lots of spaces and tabs. these can be removed by using a simple regular expression, i have made on at \url{https://regex101.com/r/YheNI3/2}. This regex detects all tabs and spaces and replaces them with a single space. If there are still multiple spaces anywhere, this regular expression can remove those \url{https://regex101.com/r/YheNI3/3/}. From here the only thing left to do is to insert the annotations into your favorite texteditor, article, paper or notetaking application. The result of the script and these regexes are shown in the word document in my GitHub repository called "Notes\textunderscore from\textunderscore heresy\textunderscore PDF.docx"
 \begin{itemize}
 \item Implementation details, or the full script demonstrating and documenting all major functions and decisions behind them
 \item Empirical Results (product of your script ~slides, map, outline, timeline…)

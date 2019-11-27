@@ -17,3 +17,5 @@ repl_python()
 devtools::install_github("rstudio/reticulate")
 install.packages("reticulate")
 repl_python()
+
+system("python pdfannots.py input/a_history_of_medieval_heresy_and_inquisition.pdf")

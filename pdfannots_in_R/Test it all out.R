@@ -8,7 +8,7 @@ system("python pdfannots.py input/test.pdf")
 # Is there any way to print the output from the console into a .txt file so that i could automate the ending process a bit more?
 #     When i'm using either cat("") or capture.output("") it only prints a 0 - can these functions in anyway print characters?
 # In my paper, should i then make a guide for setting up reticulate (Python in R) or just provide usefull links to those slides you've send me and another page i used?
-# How do i make working hyperlinks in overleaf?
+# I find it really hard to figure out how to do my references - i have used no references in the way i normally would, more like tutorials 
 
 out <- capture.output(system("python pdfannots.py input/test.pdf"))
 print(out)

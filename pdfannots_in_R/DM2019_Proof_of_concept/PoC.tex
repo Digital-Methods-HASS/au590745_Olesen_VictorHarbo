@@ -105,19 +105,15 @@ The output is all of my higglights, annotations and underlines in that PDF-file.
 
 \subsubsection{Making the output readable}
 As mentioned above, the output of the script might be filled with lots of spaces and tabs. these can be removed by using a simple regular expression, i have made on at \url{https://regex101.com/r/YheNI3/2}. This regex detects all tabs and spaces and replaces them with a single space. If there are still multiple spaces anywhere, this regular expression can remove those \url{https://regex101.com/r/YheNI3/3/}. From here the only thing left to do is to insert the annotations into your favorite texteditor, article, paper or notetaking application. The result of the script and these regexes are shown in the word document in my GitHub repository called "Notes\textunderscore from\textunderscore heresy\textunderscore PDF.docx"
-\begin{itemize}
-\item Implementation details, or the full script demonstrating and documenting all major functions and decisions behind them
-\item Empirical Results (product of your script ~slides, map, outline, timeline…)
-\end{itemize}{}
 
 \section{Critical evaluation}
-\begin{itemize}
-\item Comparison with the state-of-the-art software if any (kindly cite relevant work, scripts, etc.)
-\item Evaluation of the learning process, time on task, vis-à-vis the product.
-\end{itemize}
+This part of the paper will consist of some critical observations on the abilities of the script. There is one main concern regarding the pdfannots.py script. This is the scripts ability to recognise text in different PDF files. When feeding the script a PDF-file that is not born-digital the script might have a hard time figuring out what words, the highlights are actually highlighting, resulting in some weird extracted highlights. When that is said, general comments and annotations made in these "lower quality" PDF-files are exported flawlessly. The script definitely works best on born-digital material. My experience with it shows that it works okay on digitised material that is scanned in high quality and has an OCR layer.\newline
+I do not know of any programs that allows me to extract annotations from PDF's like this script does. It is a feature I have looked for a couple of times and I am really grateful for finding this script and now being able to use it.
+\subsection{The learning process}
+The process of finding and learning to use this script has been a great experience. Before I started this course I had minimal experience with using my computer as a professional. The wildest thing I had used it for has been making simple excel files and longer essays in word. Now i have learned programs as R, OpenRefine and proper usage of bash through the course. Furthermore during the process of getting this script to work i have learned how to run python scripts and even how to run these scripts in R. I find it useful that i have come to be able to use a script like this, which i am sure that i will make use of for the rest of my time at the university.
 
 \section{Conclusions}
-Set out the conclusion of this original software publication
+It is possible to extract highlights, annotations and more from PDF-files. This can be done with the python script pdfannots. This script can be run through R with the R-package "reticulate". For people who are doing different things in R and python, being able to run the script in both places gives a huge bonus. The script is useful for a variety of different people. It is not only usable by historians. This script can be used by everyone who has use for annotating PDF-files. It does not matter if the PDF contains an article on micro history or microbiology. The script can be used for both note taking, quotation findings and paper reviewing. It is a versatile tool, when you first know how to use it. The PDF-files given to the script do need to be of some quality to guarantee a meaningful result. Furthermore the script does produce a lot of blanks in the result, these are not an actual problem because they can be removed quickly by the use of regular expressions. 
 
 \section{Acknowledgements}
 Optionally thank people and institutes you need to acknowledge

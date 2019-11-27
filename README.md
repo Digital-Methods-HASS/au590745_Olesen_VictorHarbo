@@ -1,7 +1,7 @@
 # au590745_Olesen_VictorHarbo
 My workspace for Digital Methods for Historians 2019
 
-This repository consists of to parts
+This repository consists of two parts
 
 The first being my learning journal from the course "Digital methods for Historians 2019" and the other being my final project for that course
 

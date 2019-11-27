@@ -1,5 +1,6 @@
 \documentclass{article}
 \usepackage[utf8]{inputenc}
+\usepackage{hyperref}
 
 \title{Digital Methods: Learning Journal}
 \author{Victor Harbo Olesen}
@@ -122,19 +123,19 @@ Installing Git for Windows
 \textbf{09:34} Today i will work on my project for the exam. My idea was to make a tool that can extract highlights, comments and annotations from PDF files. Adela has sent me a link to an R repository on GitHub, which was my first intention to try to work from. But. some days ago when i made a search on GitHub i found this repository: https://GitHub.com/0xabu/pdfannots. This repository claims to be able to do the exact thing that i want to do with my tool, my only problems was that it is run in Python and not in R, which we are learning now. So i decided to look into Python. Late yesterday i made a breakthrough, but i did not record it in my learning journal given the time of the day. I did not think i would be able to do it, but around 12:00pm yesterday i ran the script and it pulled the annotations and highlights out and gave it to me in text. The biggest obstacle for me was that the read-me file for the repository wasn't very clear in how to run the script. For a Python-rookie like me, running a script the right way was a big challenge. Today i will shortly give a overview of what I've done earlier (yesterday) and then i will test the script on some different PDFs, because i have a theory that it does not pick up highlights in the text as well in all PDFs
 \subsection{Action}
 \begin{itemize}
-    \item Yesterday i started by downloading the repository from https://github.com/0xabu/pdfannots and also downloading and installing Python form https://www.python.org/. This was were i made my first mistake. The default download from Python for Windows is a 32-bit version of Python, which wouldn't run correctly in my 64-bit version. So i had to go to https://www.python.org/downloads/windows/ and download the file  "Windows x86-64 executable installer" to download the correct version of Python
-    \item When Python was installed i looked into the read-me file of pdfannots. From there i understood that the script was dependent on a python package called pdfminer.six which can be found here: https://github.com/pdfminer/pdfminer.six
-    \item Now i had to figure out how to install packages into Python. Here google was my friend, i found a youtube tutorial on how to install the package(\linkhttps://bit.ly/InstallingPackagesPython) Now it was time to run the script
-    \item When i tried to run the script by doubleclicking the file pdfannots.py a black window opened very briefly and closed again and nothing else happened. Once again i googled me to a Youtube video (\linkhttps://bit.ly/RunPyFiles), that told me a should run python files and scripts from the commandpromt. So that was what i did. 
+    \item Yesterday i started by downloading the repository from \url{https://github.com/0xabu/pdfannots} and also downloading and installing Python form \url{https://www.python.org/}. This was were i made my first mistake. The default download from Python for Windows is a 32-bit version of Python, which wouldn't run correctly in my 64-bit version. So i had to go to \url{https://www.python.org/downloads/windows/} and download the file  "Windows x86-64 executable installer" to download the correct version of Python
+    \item When Python was installed i looked into the read-me file of pdfannots. From there i understood that the script was dependent on a python package called pdfminer.six which can be found here: \url{https://github.com/pdfminer/pdfminer.six}
+    \item Now i had to figure out how to install packages into Python. Here google was my friend, i found a youtube tutorial on how to install the package\url{https://bit.ly/InstallingPackagesPython} Now it was time to run the script
+    \item When i tried to run the script by doubleclicking the file pdfannots.py a black window opened very briefly and closed again and nothing else happened. Once again i googled me to a Youtube video \url{https://bit.ly/RunPyFiles}, that told me a should run python files and scripts from the commandpromt. So that was what i did. 
     \item Errors when running python scripts from cmd. The error that i got which caused me some hours of trouble yesterday was the following: pdfannots.py: error: the following arguments are required: INFILE
-    I had a very hard time figuring out how to  define the argument for INFILE. When i looked at the code for the script i only found the INFILE one place, which was in an argparse section, which i figured out is a package in Python that makes it possible to make a CLI version of the script, but i couldn't resolve the error by inserting the path to the file i wanted to run the script on. Once again google was my friend. I found a forum where another person had trouble with an error looking like mine (\linkhttp://bit.ly/PythonErrorTheFollowingArguments). From here i found that i had to invoke my script in a sligthly different way. As before i had to change directory to where the script is located and then i had to invoke it by typing "python pdfannots.py" and then the path to the pdf that it should run on and voila, the CLI gave me my highlights and annotations from that specific PDF.
+    I had a very hard time figuring out how to  define the argument for INFILE. When i looked at the code for the script i only found the INFILE one place, which was in an argparse section, which i figured out is a package in Python that makes it possible to make a CLI version of the script, but i couldn't resolve the error by inserting the path to the file i wanted to run the script on. Once again google was my friend. I found a forum where another person had trouble with an error looking like mine \url{http://bit.ly/PythonErrorTheFollowingArguments}. From here i found that i had to invoke my script in a sligthly different way. As before i had to change directory to where the script is located and then i had to invoke it by typing "python pdfannots.py" and then the path to the pdf that it should run on and voila, the CLI gave me my highlights and annotations from that specific PDF.
 \end{itemize}{}
 \subsection{Results}
 \textbf{10:17} I now have a running script that i have to play a little with. The script can extract highlights and annotations from PDF's. 
 \subsection{Final Thoughts}
 \textbf{10:19} The following work with the script is going to be to figure out if there is a difference in how it works on PDF-files of different quality. IS there a difference between how it works with scanned, transcribed and digital-born files.
 
-\textbf{10:21} I also have a slight concern on how i can use this for my exam, the script already exist, so how can i do anything to it? I could annotate it in some ways and make a "how-to-guide", because that really isn't clear in the readme file from the github repository \linkhttps://github.com/0xabu/pdfannots
+\textbf{10:21} I also have a slight concern on how i can use this for my exam, the script already exist, so how can i do anything to it? I could annotate it in some ways and make a "how-to-guide", because that really isn't clear in the readme file from the github repository \url{https://github.com/0xabu/pdfannots}.
 
 \section{20/11/2019 (2)}
 \subsection{Thoughts on pdfannots.py script}
@@ -156,7 +157,20 @@ Installing Git for Windows
     \item What is the difference between brackets and square brackets in R?
     \item What does class(interviews) do in section 3 of the datacarpentry lesson?
     \item What is a tibble in tidyverse? - IT IS ANOTHER WAY TO VIEW DATA IN R, It shows the data in a more organised way.
-    \item I cant see any tibbles in R - what to do!?!?!?!
+    \item I cant see any tibbles in R 
 \end{itemize}
+
+\section{27/11/2019}
+\subsection{Thoughts}
+\textbf{13:41} Today i am doing a different entry in this learning journal. I have during the day worked on my final project. The pdfannots.py script in R. I have successfully been able to use the R package "reticulate" that makes it possible to run python scripts in R. Thats a big success for me. Furthermore i have found a way to run the pdfannots.py script in R. Everything is working great! On my system at least. I will have to check if someone else could install it through my proof of concept, which i have also been working on today. I have tried to write my PoC in overleaf and because of that i have done a lot of searching on how to do different things, showing screenshots, coloring text, typing code without overleaf interpreting it etc. all of these things i have found solutions for online which has taken a little time, but its working. The last thing i have done until know today has been to get my GitHub repository op and running. I have some commits and i believe that everything that has to be there is there. One thing i have to remember is doing the commits in smaller chunks. Right now i have a lot of files with the commit "Added .docx file" and none of these files have any relation to the one docx file in the repository. Anyways my repository can be found at \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo}.
+\subsection{Further work}
+\begin{itemize}
+    \item Finish the PoC document
+    \item Test if someone else understands my instructions on how to run python in R.
+    \item Test if anyone else can run the script from R.
+    \item Do some cleaning in the GitHub. It is kind of messy right now.
+    \item Prepare lightningtalk for that CEDHAR thing.
+\end{itemize}
+
 
 \end{document}

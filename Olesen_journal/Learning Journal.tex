@@ -1,0 +1,162 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+
+\title{Digital Methods: Learning Journal}
+\author{Victor Harbo Olesen}
+\date{Autumn 2019}
+
+\begin{document}
+
+\maketitle
+
+\section{Today's date}
+\subsection{Thoughts / Intentions}
+\subsection{Action}
+\subsection{Results}
+\subsection{Final Thoughts}
+
+\pagebreak{}
+
+\section{30/10/2019}
+\subsection{Thoughts / Intentions}
+
+\textbf{10:10}:I am going to start with the Regex exercises 3 and 4 now, i believe that i know how to change the stopwords lists  
+
+
+\textbf{10:21}:After i have made the Voyant stopword list into an R stopword list i can see how much time can be saved by using regular expressions, that's smart!
+
+\textbf{10:29}: Adela was right about google being our best friend in this course, found a cool regular expression for making a new line in regex101.com
+
+\subsection{Action}
+
+Making a voyant stopword list into an R stopword list
+
+\begin{itemize}
+\item Opened regex101.com and copied some of the words from bit.ly/regexexercise3 to try my regular expression on
+\item I applied the regular expression \textbackslash s to find all "new lines"/taps/spaces and then i substituted them with "," because in this way i only need to manually put a " in the front of the first word and at the end of the list, for it to be compatible with R 
+\item Copied all of the stopword list into regex101 and then applied the regular expression to the full list
+\item At last i saved my new stopword list and the regular expression i used
+\end{itemize}
+
+ Making an R stopword list into a Voyant stopword list
+
+\begin{itemize}
+\item Opened a new regex101.com and copied some of the words from bit.ly/regexexercise4 to make the regular expression
+\item Wanted to make a regular expression that substitutes ", " with a new line, so i searched google for how to make a new line in regex101.com and found the command \textbackslash n 
+\item The regular expression here is ", " to be substituted with \textbackslash n 
+\item Copied all of the stopwords from the list and formatted them trough regex101.com and made my final manual deletion of the first and last "
+\item Saved the stopwordlist and the regular expression 
+\end{itemize}
+ 
+\subsection{Results}
+
+\begin{itemize}
+\item Successfully changed the Voyant stopwordlist into a list compatible with R and also changed the R stopwordlist into a voyant compatible one
+\item Feeling more comfortable in using software that has been presented on class. Here i am thinking of overleaf, regex101.com
+\end{itemize}
+
+\subsection{Final Thoughts}
+
+\textbf{10:43}: I feel a lot more confident with regular expressions, how to use them and how to figure out how to find the ones i need to use for specific assignments. Furthermore I feel more comfortable in making this journal and navigating through our different links, software and assignments 
+
+\section{11/11/2019}
+
+\subsection{Thoughts / Intentions}
+
+\textbf{14:40}: At first i had to google how to make a backslash ones again, because i had forgotten. It is not the most common used symbol when not doing to much computational work. Turns out its "alt gr" + 
+
+\textbf{14:41}: For tomorrow i have to install Git for Windows which i don't think will cause me the biggest of troubles. I will start by following Petras guide from blackboard. As i understand Git is a more direct way to interact with the computer than the GUI that my OS (Windows 10) provides. 
+
+\subsection{Action}
+
+Installing Git for Windows
+\begin{itemize}
+
+\item First i found Petra's guide on how to download Git for Windows 
+\item Then i followed the guide and i believe that Git is now fully and correctly installed, i opened the commandpromt and changed that file which i have no clue on what does 
+    
+\end{itemize}
+
+\subsection{Results}
+\begin{itemize}
+\item I hopefully now have a working version of Git for Windows, we will see tomorrow in class 
+\end{itemize}
+
+\subsection{Final Thoughts}
+\textbf{15:06} This installation was easy to do, the thing that caused me the most trouble was writing this journal again. Remembering how to put things in the right way is a little hard. Thankfully i have my earlier entry and google. I had to ask the slack channel how to make a "smaller than" sign and i am currently waiting for an answer, update to follow.
+
+\section{12/11/2019}
+
+\subsection{Thoughts / Intentions}
+\textbf{14:29}Today we were introduced to Git and GitBash in class, I will be working on the Unix Shell exercise this afternoon. When i came home from today's lecture i sat down and tried to "tidy up" my computer through Bash and i must say that it went pretty well. I only messed up one shortcut on my desktop, because i renamed the original file. I have renamed a lot of files and moved some documents round so that the internal structure of my pc is more structured and not just a bunch of files in different folders 
+\textbf{14:34} I will catch up on the exercise from the moving and coping files part
+
+\subsection{Action}
+\begin{itemize}
+    \item I discovered that when renaming files you have to be careful, I forgot the .txt and suddenly it  was  a totally different file 
+\end{itemize}{}
+
+\subsection{Results}
+\textbf{17-11-2019 11:43} I kind of forgot to do the rest of the journal for this exercise, but i found it easy to do the rest of the GitHub and shell lecture
+
+\subsection{Final Thoughts}
+\textbf{11:45} I found the version control features of GitHub through the shell a nice feature, the only thing that worries me a little is how specific you have to make the comments when you commit the changes to GitHub. I don't think that was clearly described in the lecture, i only figured it out with the help of Adela in a 1-on-1 session.
+
+\section{17/11/2019}
+\subsection{Thoughts/Intentions}
+\textbf{11:48} Today i want to prepare for the upcoming week by installing R and RStudio for windows, i will try installing them through the guide linked in the syllabus
+\subsection{Action}
+\begin{itemize}
+    \item Started downloading R through the datacarpentry website 
+    \item When R was downloaded i downloaded the RStudio installer for Windows 10 
+    \item when the RStudio file was downloaded and installed i tried to open RStudio and didn't get any error messages, so i guess it is installed correct
+\end{itemize}
+\subsection{Results}
+\textbf{11:53} I have successfully installed both R and RStudio
+
+\subsection{Final thoughts}
+\textbf{11:53} I have no problems what so ever in installing different software, today i just don't understand the difference between R and RStudio, what does the R installation do to my computer? Is it required to run the RStudio program?
+
+\section{20/11/2019}
+\subsection{Thoughts/Intentions}
+\textbf{09:34} Today i will work on my project for the exam. My idea was to make a tool that can extract highlights, comments and annotations from PDF files. Adela has sent me a link to an R repository on GitHub, which was my first intention to try to work from. But. some days ago when i made a search on GitHub i found this repository: https://GitHub.com/0xabu/pdfannots. This repository claims to be able to do the exact thing that i want to do with my tool, my only problems was that it is run in Python and not in R, which we are learning now. So i decided to look into Python. Late yesterday i made a breakthrough, but i did not record it in my learning journal given the time of the day. I did not think i would be able to do it, but around 12:00pm yesterday i ran the script and it pulled the annotations and highlights out and gave it to me in text. The biggest obstacle for me was that the read-me file for the repository wasn't very clear in how to run the script. For a Python-rookie like me, running a script the right way was a big challenge. Today i will shortly give a overview of what I've done earlier (yesterday) and then i will test the script on some different PDFs, because i have a theory that it does not pick up highlights in the text as well in all PDFs
+\subsection{Action}
+\begin{itemize}
+    \item Yesterday i started by downloading the repository from https://github.com/0xabu/pdfannots and also downloading and installing Python form https://www.python.org/. This was were i made my first mistake. The default download from Python for Windows is a 32-bit version of Python, which wouldn't run correctly in my 64-bit version. So i had to go to https://www.python.org/downloads/windows/ and download the file  "Windows x86-64 executable installer" to download the correct version of Python
+    \item When Python was installed i looked into the read-me file of pdfannots. From there i understood that the script was dependent on a python package called pdfminer.six which can be found here: https://github.com/pdfminer/pdfminer.six
+    \item Now i had to figure out how to install packages into Python. Here google was my friend, i found a youtube tutorial on how to install the package(\linkhttps://bit.ly/InstallingPackagesPython) Now it was time to run the script
+    \item When i tried to run the script by doubleclicking the file pdfannots.py a black window opened very briefly and closed again and nothing else happened. Once again i googled me to a Youtube video (\linkhttps://bit.ly/RunPyFiles), that told me a should run python files and scripts from the commandpromt. So that was what i did. 
+    \item Errors when running python scripts from cmd. The error that i got which caused me some hours of trouble yesterday was the following: pdfannots.py: error: the following arguments are required: INFILE
+    I had a very hard time figuring out how to  define the argument for INFILE. When i looked at the code for the script i only found the INFILE one place, which was in an argparse section, which i figured out is a package in Python that makes it possible to make a CLI version of the script, but i couldn't resolve the error by inserting the path to the file i wanted to run the script on. Once again google was my friend. I found a forum where another person had trouble with an error looking like mine (\linkhttp://bit.ly/PythonErrorTheFollowingArguments). From here i found that i had to invoke my script in a sligthly different way. As before i had to change directory to where the script is located and then i had to invoke it by typing "python pdfannots.py" and then the path to the pdf that it should run on and voila, the CLI gave me my highlights and annotations from that specific PDF.
+\end{itemize}{}
+\subsection{Results}
+\textbf{10:17} I now have a running script that i have to play a little with. The script can extract highlights and annotations from PDF's. 
+\subsection{Final Thoughts}
+\textbf{10:19} The following work with the script is going to be to figure out if there is a difference in how it works on PDF-files of different quality. IS there a difference between how it works with scanned, transcribed and digital-born files.
+
+\textbf{10:21} I also have a slight concern on how i can use this for my exam, the script already exist, so how can i do anything to it? I could annotate it in some ways and make a "how-to-guide", because that really isn't clear in the readme file from the github repository \linkhttps://github.com/0xabu/pdfannots
+
+\section{20/11/2019 (2)}
+\subsection{Thoughts on pdfannots.py script}
+\textbf{16:03} Today i have tried the pdfannots.py script and i have done some observations.
+\begin{itemize}
+    \item The script does pull every annotation and highlight from a PDF. In some PDF's it has a little trouble pulling the right things from highlights, but i guess that depends on the quality of the PDF
+    \item Some times the script produces way to many spaces when run. I have fixed this by running a regular expression on the output that finds " +" and replaces them with just a single space, in this way the notes are easilier readable
+    \item When pointing the script to what PDF to analyse it is extremely important to 1) provide the correct path and 2) remember to write the format of the file. My example was a PDF called the\textunderscore
+    politics\textunderscore of\textunderscore heresy.pdf where i forgot the .pdf and then it would not run, because there was no such file as the\textunderscore
+    politics\textunderscore of\textunderscore heresy
+    
+\end{itemize}
+\section{21/11/2019}
+\subsection{Thoughts/Intentions}
+\textbf{09:30} Today i will be going through the exercises for next week. I will make a section in todays journal where i can record all my questions that i am not sure of.
+\subsection{Qustions}
+\begin{itemize}
+    \item What is an atomic vector in R?
+    \item What is the difference between brackets and square brackets in R?
+    \item What does class(interviews) do in section 3 of the datacarpentry lesson?
+    \item What is a tibble in tidyverse? - IT IS ANOTHER WAY TO VIEW DATA IN R, It shows the data in a more organised way.
+    \item I cant see any tibbles in R - what to do!?!?!?!
+\end{itemize}
+
+\end{document}

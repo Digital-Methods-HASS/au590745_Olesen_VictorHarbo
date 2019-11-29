@@ -12,6 +12,7 @@ system("python pdfannots.py PATH TO FILE") #This command runs the pdfannots.py s
 
 # DENNE COMMAND GØR AT MAN KAN KØRE SCRIPTET MED EN INFILE
 system("python pdfannots.py input/FILENAME") #Det her virker!!!
+system("python pdfannots.py --help") #Brings up the help menu
 
 
 

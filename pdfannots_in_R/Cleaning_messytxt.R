@@ -36,7 +36,7 @@ writeLines(as.character(docs[1])) # Check to see if it worked.
 
 for (j in seq(docs)) {
   docs[[j]] <- gsub( "\t"," ", docs[[j]]) 
-  docs[[j]] <- gsub( " +"," ", docs[[j]]) 
+  docs[[j]] <- gsub( " +"," ", docs[[j]])
 }
 
 docs <- tm_map(docs, PlainTextDocument)

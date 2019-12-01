@@ -21,6 +21,7 @@ repl_python()
 devtools::install_github("rstudio/reticulate")
 install.packages("reticulate")
 library(tidyverse)
+library(reticulate)
 repl_python()
 
 system("python pdfannots.py -p -o testoutput.txt input/a_history_of_medieval_heresy_and_inquisition.pdf")

@@ -1,4 +1,4 @@
-#######   Textmining
+#######   Textmining scipt taken from Adela Sobotkova at  https://github.com/adivea/TextMiningTutorial
 
 ####### https://rpubs.com/pjmurphy/265713
 

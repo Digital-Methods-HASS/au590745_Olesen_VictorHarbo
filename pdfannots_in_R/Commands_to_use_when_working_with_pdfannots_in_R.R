@@ -11,7 +11,8 @@ source_python("FILENAME.PY") #This sources a python.py file - does almost the sa
 system("python pdfannots.py PATH TO FILE") #This command runs the pdfannots.py script with the path to the .pdf file to run it on
 
 # DENNE COMMAND GØR AT MAN KAN KØRE SCRIPTET MED EN INFILE
-system("python pdfannots.py input/FILENAME") #Det her virker!!!
+system("python pdfannots.py input/FILENAME") #This command runs the script directly in the console 
+system("python pdfannots.py -p -o testoutput.txt input/INFILE") #This command tuns the script, showing the progress in the console and gives the result in a .txt file called "testoutput.txt"
 system("python pdfannots.py --help") #Brings up the help menu
 
 

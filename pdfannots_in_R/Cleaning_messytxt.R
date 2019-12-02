@@ -1,9 +1,7 @@
 #######   Textmining scipt taken from Adela Sobotkova at  https://github.com/adivea/TextMiningTutorial
 
-####### https://rpubs.com/pjmurphy/265713
-
-## Get your data
-cname <- file.path("./test/")   
+#Now we will do some textmining - this is to get the data 
+cname <- file.path("./messytxts/")   
 cname   
 dir(cname)
 
@@ -17,27 +15,17 @@ summary(docs)
 ## For details about documents in the corpus, use the inspect(docs) command.
 inspect(docs[1])
 
-
 # To write out the full text, use writeLines()
 class(docs[1])
 writeLines(as.character(docs[1]))
 
-
-## Remove unwanted diacritics 
-# ?removePunctuation()
-# ?regexp says:
-#   ‘[:punct:]’ Punctuation characters:
-#   ‘! " # $ % & ' ( ) * + , - . / : ; < = > ? @ [ \ ] ^ _ ` { |
-#           } ~’.
-
-docs <- tm_map(docs,removePunctuation)   
-writeLines(as.character(docs[1])) # Check to see if it worked.
-# The 'writeLines()' function is commented out to save space.
-
+#This is the regular expression section to use if there are a lot of \t in the plain text file from writeLines(as.character(docs[1]))
 for (j in seq(docs)) {
-  docs[[j]] <- gsub( "\t"," ", docs[[j]]) 
-  docs[[j]] <- gsub( " +"," ", docs[[j]])
+  docs[[j]] <- gsub("\t"," ", docs[[j]])
 }
 
+#To show the file (or one of the files) afterwards use this command again:
+writeLines(as.character(docs[1]))
+
+#This command saves the changes to the documents
 docs <- tm_map(docs, PlainTextDocument)
-               

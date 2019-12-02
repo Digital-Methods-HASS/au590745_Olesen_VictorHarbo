@@ -101,10 +101,17 @@ To make the script run from this we have to specify where the file is located. I
 \end{verbatim}
 Running that line gives a result looking like this:\newline
 \includegraphics[scale=0.5]{result_of_running_code.PNG} \newline
-The output is all of my higglights, annotations and underlines in that PDF-file. The console does detect a lot of spaces in the PDF and the annotations. For these i have a little work around using regular expressions
+The output is all of my highlights, annotations and underlines in that PDF-file. The console does detect a lot of spaces in the PDF and the annotations. For these i have a little work around using regular expressions. Another way to run the script, which is actually more efficient, because it makes an output file is to run the command:
+\begin{verbatim}
+    system("python pdfannots.py -p -o output.txt input/ 
+\end{verbatim} \newline
+\begin{verbatim}
+    a_history_of_medieval_heresy_and_inquisition.pdf")
+\end{verbatim}
+What this does is that it runs the script, but it gives the output in the file output.txt. This is possible because of the -o flag and then the name of the new file afterwards. The -p flag shows the progress of the script in the console. This enables us to see what the script detects when it is run on the PDF.
 
 \subsubsection{Making the output readable}
-As mentioned above, the output of the script might be filled with lots of spaces and tabs. these can be removed by using a simple regular expression, i have made on at \url{https://regex101.com/r/YheNI3/2}. This regex detects all tabs and spaces and replaces them with a single space. If there are still multiple spaces anywhere, this regular expression can remove those \url{https://regex101.com/r/YheNI3/3/}. From here the only thing left to do is to insert the annotations into your favorite texteditor, article, paper or notetaking application. The result of the script and these regexes are shown in the word document in my GitHub repository called "Notes\textunderscore from\textunderscore heresy\textunderscore PDF.docx"
+As mentioned above, the output of the script might be filled with lots of spaces and tabs. these can be removed by using a simple regular expression, i have made one at \url{https://regex101.com/r/YheNI3/2}. This regex detects all tabs and spaces and replaces them with a single space. If there are still multiple spaces anywhere, this regular expression can remove those \url{https://regex101.com/r/YheNI3/3/}. From here the only thing left to do is to insert the annotations into your favorite texteditor, article, paper or notetaking application. The result of the script and these regexes are shown in the word document in my GitHub repository called "Notes\textunderscore from\textunderscore heresy\textunderscore PDF.docx"
 
 \section{Critical evaluation}
 This part of the paper will consist of some critical observations on the abilities of the script. There is one main concern regarding the pdfannots.py script. This is the scripts ability to recognise text in different PDF files. When feeding the script a PDF-file that is not born-digital the script might have a hard time figuring out what words, the highlights are actually highlighting, resulting in some weird extracted highlights. When that is said, general comments and annotations made in these "lower quality" PDF-files are exported flawlessly. The script definitely works best on born-digital material. My experience with it shows that it works okay on digitised material that is scanned in high quality and has an OCR layer.\newline

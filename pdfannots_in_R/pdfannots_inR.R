@@ -33,11 +33,17 @@ inspect(docs[1])
 class(docs[1])
 writeLines(as.character(docs[1]))
 
+#Removes whitespaces - which usually does the trick for the output of the script
+docs <- tm_map(docs, stripWhitespace)
+
 #This is the regular expression section to use if there are a lot of \t in the plain text file from writeLines(as.character(docs[1]))
 for (j in seq(docs)) {
+  docs[[j]] <- gsub( "\t "," ", docs[[j]])
   docs[[j]] <- gsub( "\t"," ", docs[[j]]) 
-  docs[[j]] <- gsub( " +"," ", docs[[j]])
 }
+
+#To show the file (or one of the files) afterwards use this command again:
+writeLines(as.character(docs[1]))
 
 #This command saves the changes to the documents
 docs <- tm_map(docs, PlainTextDocument)

@@ -13,7 +13,7 @@ system("python pdfannots.py PATH TO FILE") #This command runs the pdfannots.py s
 
 # Commands to run the script with an INFILE and aan output file
 system("python pdfannots.py input/FILENAME") #This command runs the script directly in the console 
-system("python pdfannots.py -p -o testoutput.txt input/INFILE") #This command tuns the script, showing the progress in the console and gives the result in a .txt file called "testoutput.txt"
+system("python pdfannots.py -p -o testoutput.txt input/FILENAME") #This command runs the script, showing the progress in the console and gives the result in a .txt file called "testoutput.txt"
 system("python pdfannots.py --help") #Brings up the help menu
 
 

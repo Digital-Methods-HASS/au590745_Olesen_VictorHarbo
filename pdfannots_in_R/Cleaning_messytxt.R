@@ -24,6 +24,7 @@ writeLines(as.character(docs[1]))
 ### Can the tm-package make an output file as well, instead of just making a change to the corpus
 for (j in seq(docs)) {
   docs[[j]] <- gsub("\t"," ", docs[[j]]) 
+  docs[[j]] <- gsub(" +"," ", docs[[j]])
 }
 
 #To show the file (or one of the files) afterwards use this command again:
@@ -31,3 +32,6 @@ writeLines(as.character(docs[1]))
 
 #This command saves the changes to the documents
 docs <- tm_map(docs, PlainTextDocument)
+
+#This command exports the clean text to the Results folder
+writeCorpus(docs, path = "./Result/", filenames = NULL) #THIS WORKS - Files get named by their numbers in the corpus

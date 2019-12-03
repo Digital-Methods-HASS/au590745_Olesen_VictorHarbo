@@ -34,4 +34,4 @@ writeLines(as.character(docs[1]))
 docs <- tm_map(docs, PlainTextDocument)
 
 #This command exports the clean text to the Results folder
-writeCorpus(docs, path = "./Result/", filenames = NULL) #Files get named by their number in the corpus, makes no difference when running the script on one file at a time
+writeCorpus(docs, path = "./results//", filenames = NULL) #Files get named by their number in the corpus, makes no difference when running the script on one file at a time

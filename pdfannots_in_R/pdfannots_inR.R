@@ -1,4 +1,4 @@
-#Running pdfannots.py in R
+#Running pdfannots.py by Andrew Baumann in R
 
 #First we have to install the reticulate package, which allows us to run python in R
 install.packages("reticulate")

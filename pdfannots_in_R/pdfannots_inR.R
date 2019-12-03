@@ -13,7 +13,6 @@ library("reticulate")
 system("python pdfannots.py -p -o output.txt input/a_history_of_medieval_heresy_and_inquisition.pdf") 
 
 #From here we will have to do some cleaning of the final result. The .txt file can have some huge white spaces which can be removed using regular expressions
-
 ## First we will have to get the data. Please copy the output.txt into the messytxts folder at first 
 file.copy("output.txt", "messytxts/output.txt")
 

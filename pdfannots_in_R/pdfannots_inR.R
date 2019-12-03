@@ -1,4 +1,4 @@
-#Running pdfannots.py by Andrew Baumann in R
+#This script runs the Python script pdfannots.py in R and does some streamlining of the end result through the R package "tm"
 
 #First we have to install the reticulate package, which allows us to run python in R
 install.packages("reticulate")

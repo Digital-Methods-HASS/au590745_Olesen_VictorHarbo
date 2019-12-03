@@ -19,7 +19,8 @@ This proof of concept will show how it is possible to extract highlights, annota
 \textcolor{red}{Python; PDF; pdfannots; pdfminer.six; R; RStudio; Reticulate; Python and R;} 
 \section{Introduction}
 Have you ever been reading an article in the form of a .pdf file and annotated and highlighted while you read and afterwards thought: “I would really like to have all of these annotations and highlights in a document for them self” but the pdf-reader us not equipped with a function to export that data. This script does exactly that through few commands. This script is not only relevant for historians, but for everyone who from time to time reads and annotates PDF’s, this could be anyone from professors at the university to high school students. Andrew Baumann, the author of the script, has made the code to make his reviewing of conference papers easier. As said before I believe it is a great annotation tool for notetaking as well. \newline
-To make use of this script, you would have to download the correct version of Python for your computer and be able to install a python package called pdfminer.six, if you do not feel comfortable using Python, fear not. It is also possible to run the script through R. This paper will introduce both ways around it. In terms of skills it would be an advantage to know how to navigate your filesystem through bash, this is important to be able to tell the script where the PDF file to extract from is located. 
+To make use of this script, you would have to download the correct version of Python for your computer and be able to install a python package called pdfminer.six. That is as little python needed for making this script run. The rest will happen in R. In terms of skills it would be an advantage to know how to navigate your filesystem through bash, this is important to be able to tell the script where the PDF file to extract from is located.\newline
+The script and its dependencies are all available at my Github repository pdfannots\textunderscore in\textunderscore R at \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo}. My script is an R version of Andrew Baumanns pythonscript which is also available in my Github, but to get the original pythonscript for running it in python go to \url{https://github.com/0xabu/pdfannots}. 
 
 \section{Problems and background}
 
@@ -74,9 +75,24 @@ Here R tells us, that is ran the command and it has detected python version 3.7.
     quit
 \end{verbatim}
 You have now exited the reticulate python console and are back in the normal R console. This opening and closing of reticulate python is useful to understand how to navigate between Python and R. This command is actually \textbf{not} required when running the pdfannots.py script.This is because the script needs to be run with another command, more on this later.\newline
-This was a short description on how to run python in R. If anything is causing trouble, consult the slides of Emma Rand at \url{https://3mmarand.github.io/useR2019_tutorial/#38}
+This was a short description on how to run python in R. If anything is causing trouble, consult the slides of Emma Rand at \url{https://3mmarand.github.io/useR2019_tutorial/#38} \newline
+A very important part of getting Python and R to work together is setting an environment variable in windows. This is done by doing as Emma Rand points out in her tutorial located at \url{https://github.com/3mmaRand/useR2019_tutorial}
+\begin{itemize}
+    \item You need to set your QT\textunderscore PLUGIN\textunderscore PATH environment variable to wherethe RStudio and Anaconda3 plugins are located
+    \item In windows: Control Panel -> System and Security -> System then
+    \item Advanced System settings -> Environment variables
+    \item I have set mine to:
+    \item \begin{verbatim}
+C:\Program Files\RStudio\bin\plugins; C:\ProgramData\
+Anaconda3\Library\plugins  
+    \end{verbatim}
+    \item \begin{verbatim}You may need to add a new variable. The order of the paths
+    matters - make sure you have the C:\Program Files\RStudio
+    \bin\plugins first.
+    \end{verbatim}
+\end{itemize}
 
-\subsection{Pdfannots.py}
+\subsection{Pdfannots.py in R}
 This section of the text will focus on how to install the script, where to put it in your system, how to use it through RStudio and things to remember when working with the script. First things first. We have to have access to the script in order to use it. The script was originally made by Andrew Baumann and it can be found at his GitHub repository at \url{https://github.com/0xabu/pdfannots}. I have also uploaded the script to my GitHub repository, which can be found here: \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo/tree/master/pdfannots_in_R/input}, so that it is easy to find both this paper and the script it is about at the same place. All credit for the pdfannots.py script goes to Andrew Baumann. 
 
 \subsubsection{Accessing the script}
@@ -111,7 +127,22 @@ The output is all of my highlights, annotations and underlines in that PDF-file.
 What this does is that it runs the script, but it gives the output in the file output.txt. This is possible because of the -o flag and then the name of the new file afterwards. The -p flag shows the progress of the script in the console. This enables us to see what the script detects when it is run on the PDF.
 
 \subsubsection{Making the output readable}
-As mentioned above, the output of the script might be filled with lots of spaces and tabs. these can be removed by using a simple regular expression, i have made one at \url{https://regex101.com/r/YheNI3/2}. This regex detects all tabs and spaces and replaces them with a single space. If there are still multiple spaces anywhere, this regular expression can remove those \url{https://regex101.com/r/YheNI3/3/}. From here the only thing left to do is to insert the annotations into your favorite texteditor, article, paper or notetaking application. The result of the script and these regexes are shown in the word document in my GitHub repository called "Notes\textunderscore from\textunderscore heresy\textunderscore PDF.docx"
+As mentioned above, the output of the script might be filled with lots of spaces and tabs. these can be removed by using regular expressions. This is done in the part of the script called ##textcleaning. When the script is run on other files and has to be cleaned in another way it is easy to add or change those regular expressions used. Simply add another line in the code or change the things to substitute. Right now the script removes \textbackslash t and replaces those with a single space, while it also substitutes multiple spaces with a single space. If you wanted to add another regular expression to the cleaning it could be done adding another of these lines:
+\begin{verbatim}
+for (j in seq(docs)) {
+    docs[[j]] <- gsub("\t"," ", docs[[j]]) 
+    docs[[j]] <- gsub(" +"," ", docs[[j]])
+}
+\end{verbatim}
+An example could be to also remove all single digits, which could be done this way
+\begin{verbatim}
+for (j in seq(docs)) {
+    docs[[j]] <- gsub("\t"," ", docs[[j]]) 
+    docs[[j]] <- gsub(" +"," ", docs[[j]])
+    docs[[j]] <- gsub("\d","", docs[[j]])
+} 
+\end{verbatim}
+These regular expressions are a part of the R package "tm" which is a textmining package, that is used in my script. Installation of tm and the steps prior to these regular expressions are all annotated in my script. 
 
 \section{Critical evaluation}
 This part of the paper will consist of some critical observations on the abilities of the script. There is one main concern regarding the pdfannots.py script. This is the scripts ability to recognise text in different PDF files. When feeding the script a PDF-file that is not born-digital the script might have a hard time figuring out what words, the highlights are actually highlighting, resulting in some weird extracted highlights. When that is said, general comments and annotations made in these "lower quality" PDF-files are exported flawlessly. The script definitely works best on born-digital material. My experience with it shows that it works okay on digitised material that is scanned in high quality and has an OCR layer.\newline

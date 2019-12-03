@@ -1,4 +1,6 @@
-#Everything in this script is made by Andrew Baumann. I (Victor Harbo) is just using this script in my Digital methods course
+##Everything in this script is made by Andrew Baumann. I (Victor Harbo) is just using this script in my Digital methods course
+##This file does not need to be opened in R it the python script invoked in the file "pdfannots_inR.R""
+
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 

@@ -16,28 +16,23 @@
 \section{Abstract}
 This proof of concept will show how it is possible to extract highlights, annotations, highlights with annotations, notes and other edits from PDF-files. The script used for this is a python script, but it is possible to run it in an R environment. This extracting of data can be helpful when taking notes as a student or even when writing assignments and articles on a higher level. The script has the ability to extract highlights, annotations, highlights with annotations and also underlined annotations. It is a versatile tool that can be used for taking notes, producing quotes for papers and it can also be used for reviewing.
 \section{Keywords}
-\textcolor{red}{Python; PDF; pdfannots; pdfminer.six; R; RStudio; Reticulate; Python and R;} 
+\textcolor{red}{Python; PDF; pdfannots; pdfminer.six; R; RStudio; Reticulate; Python and R; textmining; tm;} 
 \section{Introduction}
 Have you ever been reading an article in the form of a .pdf file and annotated and highlighted while you read and afterwards thought: “I would really like to have all of these annotations and highlights in a document for them self” but the pdf-reader us not equipped with a function to export that data. This script does exactly that through few commands. This script is not only relevant for historians, but for everyone who from time to time reads and annotates PDF’s, this could be anyone from professors at the university to high school students. Andrew Baumann, the author of the script, has made the code to make his reviewing of conference papers easier. As said before I believe it is a great annotation tool for notetaking as well. \newline
 To make use of this script, you would have to download the correct version of Python for your computer and be able to install a python package called pdfminer.six. That is as little python needed for making this script run. The rest will happen in R. In terms of skills it would be an advantage to know how to navigate your filesystem through bash, this is important to be able to tell the script where the PDF file to extract from is located.\newline
-The script and its dependencies are all available at my Github repository pdfannots\textunderscore in\textunderscore R at \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo}. My script is an R version of Andrew Baumanns pythonscript which is also available in my Github, but to get the original pythonscript for running it in python go to \url{https://github.com/0xabu/pdfannots}. 
+The script and its dependencies are all available at my Github repository pdfannots\textunderscore in\textunderscore R at \url{https://github.com/Digital-Methods-HASS/au590745_Olesen_VictorHarbo}. My script is an R version of Andrew Baumanns pythonscript which is also available in my Github, but to get the original pythonscript for running it in python go to \url{https://github.com/0xabu/pdfannots}. When reading through this proof of concept I recommend having the script pdfannots\textunderscore inR.R open in RStudio and following along there as well. The script should be useable without this text, but some parts of this paper might not make much sense without the script to look at as well. 
 
 \section{Problems and background}
 
 The script used in this proof of concept has no historical background and is not directed at a specific historical period or event. Instead it is a tool developed for researchers and students in general. As said in the introduction this tool can solve a problem, which for me until this course has been a problem. It allows the user to extract annotations and highlights from PDF-files.
-As a consequence of the paper not being directed at any historiography but rather being a universal tool, the literature for this assignment is not dominated by any articles, books etc. regarding history. In fact most 0f the references in this paper are going to be referring to web pages and video-tutorials that have helped me understanding Python and scripts in general.
-The most important reference for this paper is Andrew Baumann and his GitHub repository at \url{https://github.com/0xabu/pdfannots}. Baumann is the author behind "pdfannots" which is the script that allows the end-user to extract highlights and annotations from PDF's.
+As a consequence of the paper not being directed at any historiography but rather being a universal tool, the literature for this assignment is not dominated by articles, books etc. regarding history. In fact most of the references in this paper are going to be referring to web pages and video-tutorials that have helped me understanding Python and scripts in general.
+The most important reference for this paper is Andrew Baumann and his GitHub repository at \url{https://github.com/0xabu/pdfannots}. Baumann is the author behind "pdfannots" which is the script that allows the end-user to extract highlights and annotations from PDF's. Besides Baumann, Emma Rand and her repository on running python in R has been of great use for this project. This can be found at \url{https://github.com/3mmaRand/useR2019_tutorial}
 
 \section{Software framework}
 \subsection{Choice of software}
 It is important to tell that it does not matter if the script is run directly in python through bash or through the R package reticulate. The choice depends on what software the user is using already and if installing python for bash would clash with other versions of python that might be installed. Personally i am using the script in R, because R is what we have been taught in class.
 I have run this script on a PC running a 64-bit version of windows 10. To be able to run the python script trough R i have used R version 3.6.1, RStudio version 1.2.5019 and Python Anaconda 3.7.4.\newline
 When i tried running the script directly in python through bash i used Python 3.7.5, installed from pythons own windows 64-bit installer, found at \url{https://www.python.org/downloads/windows/}. \newline
-
-\begin{itemize}
-    \item Give a short overview of the overall software architecture, dependencies and prerequisites
-    \item \textcolor{red}{Should i make a part about regex101.com or is it possible to do the regular expressions in R?}
-\end{itemize}{}
 
 \section{Data Acquisition and Processing}
 \begin{itemize}
@@ -78,7 +73,7 @@ You have now exited the reticulate python console and are back in the normal R c
 This was a short description on how to run python in R. If anything is causing trouble, consult the slides of Emma Rand at \url{https://3mmarand.github.io/useR2019_tutorial/#38} \newline
 A very important part of getting Python and R to work together is setting an environment variable in windows. This is done by doing as Emma Rand points out in her tutorial located at \url{https://github.com/3mmaRand/useR2019_tutorial}
 \begin{itemize}
-    \item You need to set your QT\textunderscore PLUGIN\textunderscore PATH environment variable to wherethe RStudio and Anaconda3 plugins are located
+    \item You need to set your QT\textunderscore PLUGIN\textunderscore PATH environment variable to where the RStudio and Anaconda3 plugins are located
     \item In windows: Control Panel -> System and Security -> System then
     \item Advanced System settings -> Environment variables
     \item I have set mine to:
@@ -87,8 +82,8 @@ C:\Program Files\RStudio\bin\plugins; C:\ProgramData\
 Anaconda3\Library\plugins  
     \end{verbatim}
     \item \begin{verbatim}You may need to add a new variable. The order of the paths
-    matters - make sure you have the C:\Program Files\RStudio
-    \bin\plugins first.
+matters - make sure you have the C:\Program Files\RStudio
+\bin\plugins first.
     \end{verbatim}
 \end{itemize}
 

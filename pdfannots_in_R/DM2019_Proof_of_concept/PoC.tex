@@ -30,15 +30,10 @@ The most important reference for this paper is Andrew Baumann and his GitHub rep
 
 \section{Software framework}
 \subsection{Choice of software}
-It is important to tell that it does not matter if the script is run directly in python through bash or through the R package reticulate. The choice depends on what software the user is using already and if installing python for bash would clash with other versions of python that might be installed. Personally i am using the script in R, because R is what we have been taught in class.
-I have run this script on a PC running a 64-bit version of windows 10. To be able to run the python script trough R i have used R version 3.6.1, RStudio version 1.2.5019 and Python Anaconda 3.7.4.\newline
-When i tried running the script directly in python through bash i used Python 3.7.5, installed from pythons own windows 64-bit installer, found at \url{https://www.python.org/downloads/windows/}. \newline
+It is important to tell that it does not matter if the script is run directly in python through bash or through the R package reticulate. The choice depends on what software the user is using already and if installing python for bash would clash with other versions of python that might be installed. Personally i am using the script in R, because R is what we have been taught in class. I have run this script on a PC running a 64-bit version of windows 10. To be able to run the python script trough R i have used R version 3.6.1, RStudio version 1.2.5019 and Python Anaconda 3.7.4. When i tried running the script directly in python through bash i used Python 3.7.5, installed from pythons own windows 64-bit installer, found at \url{https://www.python.org/downloads/windows/}.
 
 \section{Data Acquisition and Processing}
-\begin{itemize}
-\item List and cite all sources of data used in this paper.
-\item Details of data extraction, filtering and preparation. Attach processing scripts where relevant.
-\end{itemize}{}
+As this paper is not doing data driven history but rather assessing a practical obstacle for everyone doing digital textual work. This tool does require some data to run on, which is the PDF-file with annotations. This can be anything and in my own case i will use a PDF on medieval heresy and inquisition because it is relevant for another paper I am currently working on. If anybody wants that specific document it is "A History of Medieval Heresy and Inquisition" by Jennifer Kolpacoff Deane. The part of it that I am using as the example is the introduction. This PDF I have annotated with my own notes, which can be seen as the processing of the file. Again, this PDF could be any PDF that is useful for you.
 
 \section{Implementation and Empirical Results}
 In this section it will be shown how to get Python running in R. To do this i followed Emma Rands tutorial on "Keeping an exotic pet in your home" which can be found at \url{https://github.com/3mmaRand/useR2019_tutorial}. From here we will move towards using the actual script and avoiding the common pitfalls that seems to exist.  
@@ -149,8 +144,12 @@ The process of finding and learning to use this script has been a great experien
 It is possible to extract highlights, annotations and more from PDF-files. This can be done with the python script pdfannots. This script can be run through R with the R-package "reticulate". For people who are doing different things in R and python, being able to run the script in both places gives a huge bonus. The script is useful for a variety of different people. It is not only usable by historians. This script can be used by everyone who has use for annotating PDF-files. It does not matter if the PDF contains an article on micro history or microbiology. The script can be used for both note taking, quotation findings and paper reviewing. It is a versatile tool, when you first know how to use it. The PDF-files given to the script do need to be of some quality to guarantee a meaningful result. Furthermore the script does produce a lot of blanks in the result, these are not an actual problem because they can be removed quickly by the use of regular expressions. 
 
 \section{Acknowledgements}
-Optionally thank people and institutes you need to acknowledge
+At last i would like to thank Adela Sobotkova for her almost endless amount of consultations, which have helped me alot to understanding how to combine different parts of different scripts to end at this final result. Without these consultations I would never have been able to  produce an output file of any form. 
 
 \section{References}
-At least 5 are required
+Baumann, Andrew; pdfannots; at: \url{https://github.com/0xabu/pdfannots} \newline
+Rand, Emma; useR2019\textunderscore tutorial at: \url{https://github.com/3mmaRand/useR2019_tutorial} \newline
+Sobotkova, Adela; TextMiningTutorial at:\newline
+\url{https://github.com/adivea/TextMiningTutorial} \newline
+Feinerer, Ingo; Rforge for tm package at \url{https://rdrr.io/rforge/tm/} \newline
 \end{document}

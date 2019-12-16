@@ -1,210 +1,48 @@
-## Highlights
-
- * Page 1:
- > For despite the apparently straightforward title of A History of Medieval Heresy and Inquisition, this volume actually argues that heresy and inquisition were anything but simple or uncontested categories (either among medieval contemporaries or modern scholars)
-
- * Page 3:
- > As a consequence, the theologically ignorant or confused were not at risk of condemnation for heresy, so long as they accepted the corrected teaching provided by their spiritual supervisor.
-
- * Page 4:
- > A historian must resist assuming that any individual voice can be easily or accurately understood through such intrusively filtered reported speech
-
- * Page 4:
- > Labels are sticky—they linger and cling, particularly the names and categories that institutions assign to assess, control, and supervise human beings.
-
- * Page 7:
- > By the ninth century, the pope had accrued the authority to make kings and crown emperors (much to the disgust of the Greek emperors in cosmopolitan Constantinople, who regarded Western rulers as uncouth backwater upstarts).
-
- * Page 7:
- > By the tenth century, European lands from Italy to England were dotted with agriculturally productive monastic foundations that served as vital community service centers
-
- * Page 7:
- > Some missionaries, such as St. Boniface (c. 750 C.E.), headed into uncharted territory in what is now Germany, preaching and persuading, often by superimposing Christian concepts on local beliefs.
-
- * Page 10:
- > As we will see, the universities in Oxford and Prague would become particular sites of controversy over heresy, orthodoxy, and spiritual authority.
-
- * Page 11:
- > Heir to St. Peter, the rock upon whom Jesus built his church, the pope had over the preceding centuries wielded increasingly more spiritual and political authority; early medieval popes crowned kings and emperors, commanded armed forces, and even possessed a wide strip of central Italian lands known as the Papal States.
-
- * Page 11:
- > The reformer pope whose influence irrevocably set the stage for later notions of heresy and inquisition was Gregory VII (r. 1073–1085 C.E.), who embarked upon a passionate campaign to correct what he saw as unacceptable failings within the clergy and to restore the spiritual credibility of the Church.
-
- * Page 11:
- > Priestly behavior became an object of scrutiny, and laypeople (influenced by the many other intensifications of their day) began to take greater notice of spiritual matters. Although the Church still held the keys to the kingdom, its priestly gatekeepers were being held to a new standard.
-
- * Page 11:
- > Pope Gregory's reformist agenda to purify Christendom and enhance papal authority was continued under the pontificates of his successors, notably Urban II (r. 1088–1099 C.E.) and Innocent III (1198–1216C.E.)
-
- * Page 15:
- > Jews inhabited an increasingly dangerous no-man's-land of economic, religious, and physical vulnerability; and the poor, dispossessed, afflicted, or otherwise marginalized eked out an existence aided only by the promise of salvation and perhaps a few coins or scraps of Christian charity.
-
-
 ## Detailed comments
 
- * Page 1:
- > "We know that they [heretics] suppose their behavior to be virtuous and they do many things that are in the nature of good works; in frequent prayer, in vigils, in sparsity of food and clothing, and—let me acknowledge the truth—in austerity of abstinence they surpass all other religious." Yet he warned his reader that "under this cloak of good works" their sweet words steal away the hearts of the foolish
+ * Page 1: Diskursanalyse som et nyt slang for retorik og nærlæsning
 
- James Capelli (en italiensk francisker munk) siger at kætterne kan stjæle hjerterne fra de dumme
+ * Page 1: Der er ingen enighed om hvordan diskursbegrebet skal forstås
 
- * Page 1: Man kan stille mange spørgsmål til kættere og kætteri
+ * Page 1: Diskurs begrebet handler ikke kun om at tale eller samtale, det stammer endnu mere fra Foucault
 
- * Page 1:
- > For instance, "How relevant are similarities between reports from the eleventh, twelfth, and thirteenth centuries? Is it good reporting to lump together accounts from such different regions as the lands of modern-day France, Germany, and Italy?
+ * Page 2: Der findes forskellige skoler indenfor diskursteori - de udspringer alle fra Foucault
 
- Handler om at der kan være store afstande i tid, som kan have betydning for hvordan man beskriver kættere
+ * Page 2: Diskurs er de mønstre, som vores sprog følger i forskellige sociale sammenhænge og påstanden er ar at disse mønstre er bestemmende for reproduktionen af den sociale verden og for forandringen af den. 
 
- * Page 1: Snakker man om den samme gruppe når man kalder dem det samme? fx manikæere
+ * Page 2: Der findes ikke kun en diskurs analyse, men forskellige måder at gribe det an på
 
- * Page 2:
- > "heresy only exists where there is an orthodoxy to name it. The two are an inseparable binary, and 'heresy' is forever both a boundary and a fluctuating category."4
+ * Page 3: Man skal passe på ikke kun at bruge diskurserne til at kigge frem i tiden - man skal huske at spørge hvorfor
 
- DET HER ER ET VILDT FEDT CITAT, SOM JEG SKAL HAVE MED
+ * Page 3: Husk nu at finde en årsagsforklaring
 
- * Page 2:
- > From one point of view, however, heresy was even necessary: after all, St. Paul had warned, "There must also be heresies among you," so that the righteous can be known by contrast.5
+ * Page 3: Diskursanalysen lægger op til at se sociale praksisser som tegn - diskurser er altid i udvikling og kamp
 
- Kætteri er med til at definere den rigtige tro, ved at give en kontrast
+ * Page 3: Diskursanalytiske begreber som hegemoni, antagonisme, flydende betegnere, nodalpunkter
 
- * Page 2:
- > From these earliest Christian centuries were birthed a set of lurid and remarkably enduring stereotypes of heretics as not only hypocritical and secretive foes but even as orgiastic, bestial, murderous baby eaters— ludicrous and baseless accusations that would nonetheless echo painfully across the medieval centuries.
+ * Page 3: Kan man overhovedet tale om diskursanalyse eller kun om diskurser i historiefaget
 
- Man har helt fra den tidligste tid af kristendommen haft fordomme om kættere
+ * Page 4: Det er ifølge teksten hos Foucault der er mest at hente for historikere
 
- * Page 2:
- > Only in the eleventh and twelfth centuries (for reasons discussed below) did the medieval clergy begin to encounter uncomfortably novel forms of preaching and lay piety;
+ * Page 4: Sproget kan blive meget kringlet. Det er i historiekredse allerede meget kringlet. Diskursbegreber gør det kun mere kringlet
 
- Tidligere har kirkesystemet ikke været udbygget nok til at der har været denne modstand
+ * Page 4: diskursanalysen kan også åbne øjnene for, at de store tænkeres systemer (kun) er fastfrosne øjebliksbilleder, og at alle komplekse kulturelle systemer er fulde af dialektiske spændinger
 
- * Page 3:
- > Clergy of all ranks recognized that laypeople often held uninformed or mistaken beliefs about Christian doctrine and its apparently paradoxical theology of incarnate divinity, virgin birth, and resurrection from the dead.
+ * Page 4: "Det centrale ved Foucaults måde at tænke diskurser på er, at han prøver at begribe sammenhængen mellem det, mennesker siger (og skriver), magt og viden"
 
- Kristendommen kunne godt være svær at holde styr på for lægfolkene, det gjorde ikke en til kætter nødvendigvis
+ * Page 4: Sproget er bundet i tid, rum og sociale relationer
 
- * Page 3:
- > What, then, constituted heresy in the eyes of contemporaries? Derived etymologically from the Greek haeresis ("choice"), the core of heresy as defined by the Church was disobedience rooted in pride and the willful rejection of orthodoxy after correction: the deliberate choosing of error over truth.
+ * Page 4: Mønstre er ikke statiske eller vilkårlige
 
- Kættere vælger at stå ved deres valg om at tro på det "forkerte"
+ * Page 5: Foucault bruger kontrasten for at se noget andet end sin samtid
 
- * Page 3:
- > The dialogue over what constituted heresy, therefore, was never simple; multiple voices emerged in an archipelago of diverse contexts and environments that varied enormously over time and place. Because the categories of "heresy" and "orthodoxy" lay very much in the eye of the beholder, they present a vexing but invigorating challenge for historians whose task is to reconstruct the past. Whose past? And according to which sources?
+ * Page 5: Det sprog vi bruger (de diskurser) vi opfatter som det gyldige til at tale om et givent fænoment har vi tilegnet os igennem vores opvækst i en bestemt kultur 
 
- Hvordan er forholdet mellem ortodoksi og kætteri
-
- * Page 3:
- > For the topic of medieval constructions of heresy, a range of sources exists for studying the topography of belief deemed heretical by the medieval Church.
-
- Massere af kilder der beskriver kirkens syn på hvad der er kætteri
-
- * Page 3:
- > However, these are of course largely hostile accounts driven by an orthodox agenda.
-
- FJENDTLIG ORTODOKS AGENDA
-
- * Page 4:
- > Due largely to the scrupulous editing and translation work of nineteenth-century scholars, historians now have access to a wide variety of spiritual and theological sources that, although still penned by elites, represent a sympathetic rather than hostile perspective: collections of biblical sources; vernacular translations; creeds, rituals, and professions of faith; treatises and doctrinal discussions; and sermons. Town records, chronicles, letters, and other indirectly related materials also provide insight to the world of those accused of heresy. Where possible, these may all be triangulated with inquisitorial records and other sources of information to reconceptualize the spiritual landscape of the high and later Middle Ages.
-
- DER FINDES KILDER TIL HVORDAN KÆTTERNE HOLDTE DERES GUDSTJENESTER OG HVAD DE TROEDE PÅ - hold dem op imod hvad kirken skriver hvis muligt
-
- * Page 4:
- > a variety of types of sources while acknowledging that none of them is exclusive, inclusive, or necessarily any more "true" than others.
-
- Der er ikke nødvendigvis nogle kilder der er mere sande end andre
-
- * Page 4:
- > For a modern equivalent, one might consider the term terrorist and the ideological, political, legal, and authoritative gaps between those who wield it and those to whom it is attributed
-
- Begrebet kætter overfor det moderne terrorist - ingen vil bruge det om sig selv 
-
- * Page 4: Kætteri er en label, som bliver sat på nogle andre, man vil aldrig bruge det om sig selv
-
- * Page 5:
- > I avoid using the term heretic except as employed by clerics and inquisitors, as well as their broad (and broadly derogatory) names for groups such as the Cathars, Waldensians, and Free Spirits.
-
- Er det ikke at være meget forsigtig?
-
- * Page 5:
- > I adopt the nomenclature they chose for themselves: often the simple terms of Good Christians, Poor Men, or the Known. Any confusion that may result is, I believe, a reasonable price to pay for avoiding the forced categorization of medieval people into historically distorted and reductive labels.
-
- Kætteri er en reducerende historisk label
-
- * Page 5:
- > It should also come as no surprise that the label Inquisition is equally problematic, suggesting an institutional coherence and official unity that never existed in the Middle Ages. Avoiding the looming capitals of "The Inquisition," we will instead refer to inquisitors, the inquisitorial process, or inquisitorial tribunals (one example of a specifically deputized but nonetheless decentralized approach to combating heresy).
-
- Inkvisition er heller ikke bare "inkvisitionen", det er bedre at snakke om inkvisitorer 
+ * Page 6: Diskurstænkning istedet for diskursanalyse - man kan tænke i diskurser, men der er mange måder at analysere dem 
 
  * Page 6:
- > At one extreme are those who perceive heresy as an imaginary construct manufactured by medieval clerical elites and perpetuated by modern historians; at the other, those who study heretics and emphasize the experience of self-consciously dissenting communities
 
- De to ydre grene af kætter forskning
+ Der findes ikke et begreb der hedder "diskursanalysen" - der er flere takes på hvad diskurs analyse er, det er lidt det samme, som at der ikke er en inkvisitionen
 
- * Page 6:
- > We do the past a disservice if we simply dismiss the medieval Church and its inquisitorial history as a grotesque relic of a barbaric era. Far from popular conceptions of a dark age, central medieval Europe (c. 1050–1300C.E.) witnessed a cultural efflorescence of universities, cathedrals, literature, urbanization, and long-distance trade. So how do we square that with the fact that Christians scrutinized the hearts and minds of other human beings, consigning many to die in agony at the stake?
-
- Middelalder kirken er et komplekst emne, den er ikke kun dårlige kætterforfølgelser, den er også uddannelse og nye universiteter
-
- * Page 6:
- > the lands we call Europe were inhabited by a wide range of peoples, including Visigoths, Ostrogoths, Lombards, Franks, and Anglo-Saxons, all increasingly accustomed to encountering Romans through trade or war. Although the Romans had established city outposts such as Londinium (London), Colonia
-
- Noget om Europas befolkning i middelalderen - fra efter romerrigets fald
-
- * Page 6: Afsnit der handler om Europas befolkning og ledere i middelalderen
-
- * Page 7: Der var mange forskellige folkeslag i det multi-kulturelle sydeuropa
-
- * Page 8:
- > Given this extraordinary regional diversity, it should come as no surprise that we will pay particular attention to specific local geographies and how the unique political, religious, and cultural environment of each region nurtured distinct flavors and shades of spiritual controversy.
-
- I middelalderen er der stor forskel på hvad som sker i forskellige geografiske områder
-
- * Page 8: Man havde store husholdninger og landsbyen var vigtig
-
- * Page 8:
- > And finally, the parish or Christian administrative unit overlapped with all of these, staffed with a more or less capable local priest who led services, provided sacraments, heard confession, and generally instructed the laity as to the proper path to salvation.
-
- Sognet spiller ind i alle relationer, både i husholdningen og i byen
-
- * Page 9: 1050-1300: Større befolkninger og byer - købmændene opstår som klasse. De kristne bygninger universitet og katedral bygges
-
- * Page 10:
- > After the twelfth century, popes, kings, bishops, nobles, civic councils, and inquisitors began to draw routinely upon the concentrated brainpower and cultural influence of university faculty; not surprisingly, connections between university academics and inquisitors would also become stronger and more complex over time
-
- inkvisitorerne er i større grad akademikere
-
- * Page 11:
- > Little wonder that this was also the age of vernacular translations of scripture, texts outlawed by the Church but of enormous spiritual significance to eager lay readers and listeners.
-
- Der er samtidigt titler der skrives udelukkende i det vernakulære sprog 
-
- * Page 11:
- > Among the many consequences were religious intensifications ranging from a consolidation of papal power, the successful and wide-ranging implementation of Church reform, and the igniting of lay religious enthusiasm across Christendom.
-
- Konsekvenserne af den styrkende pavemagt i slutningen af 1100-tallet
-
- * Page 12:
- > How is one to live well in the tempting, troubling, turbulent material world? This has never been an easy question to answer, but it loomed particularly large in the hearts and minds of medieval Christians after the twelfth century. The answers provided by the early medieval Church no longer satisfied, particularly as the urban and commercial intensifications of the age fostered growing literacy, textual production, and circulation of ideas.
-
- Det er fandme svært at leve et fromt liv når der er så mange fristelser i den materielle verden
-
- * Page 12:
- > Illegal vernacular translations of scripture began to appear by the end of the twelfth century, and small, likeminded groups formed "textual communities" to hear the Word in their own tongue.11 Sometimes these clusters formed unique ideas, as reflected in accounts of the first significant group accused of heresy in the medieval West—the community at Orléans in 1022 (recounted by Adémar of Chabannes above).
-
- De første kættere startede som et læse fællesskab, hvor man ville høre skriften i sit eget sprog
-
- * Page 12:
- > It was the first capital condemnation for heresy in over seven centuries, and it would become the opening salvo in a quickly escalating European dialogue over proper faith, order, and authority.
-
- Kætterne i Orleans i 1022
-
- * Page 12: Armed pilgrimage = KORSTOG
-
- * Page 15:
- > the development "of an administrative class whose members identified their interests with those of their patrons and not their families, [who] laid the foundation for the reshaping of European society and culture."12
-
- R.I. Moore's argument - ham som jeg skal have fat i en bog fra
-
- * Page 15:
- > the pen ultimately controlled the sword in later medieval Europe. Nowhere was this truer than in the burgeoning ranks of thinkers and writers who administered the intensifying agendas of popes, archbishops, kings, and lords.
-
- Blyanten styrer sværdet
+ Der findes ikke en bestemt algoritme for hvordan diskursanalysen skal bygges op
 
